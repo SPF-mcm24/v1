@@ -241,7 +241,7 @@ main {
 .hero h2 {
     color: var(--accent-color);
     font-size: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .content-grid {
@@ -455,6 +455,9 @@ button:hover {
 }
 
 @media (max-width: 767px) {
+    .content-grid {
+        padding: 0 1.3rem;
+    }
     body {
         font-size: 16px;
     }
@@ -492,7 +495,7 @@ button:hover {
     }
 
     .card {
-        padding: 1.5rem;
+        padding: 1.3rem;
         border-radius: 15px;
     }
 
@@ -807,7 +810,7 @@ button:hover {
 
 @media (max-width: 768px) {
     .hero {
-        padding: 2rem;
+        padding: 1.5rem;
         margin-bottom: 3rem;
         border-radius: 15px;
         text-align: justify;
