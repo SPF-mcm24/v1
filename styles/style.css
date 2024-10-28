@@ -472,7 +472,7 @@ button:hover {
     }
 
     main {
-        padding: 2rem 1rem;
+        padding: 1rem 1rem;
     }
 
     .hero {
@@ -555,7 +555,7 @@ button:hover {
 
 @media (max-width: 767px) {
     .hero h2 {
-        font-size: 2rem;
+        font-size: 1.4rem;
         text-align: center;
     }
 
@@ -1320,6 +1320,9 @@ button:hover {
         width: 100px;
         height: 100px;
     }
+    .logo-img {
+        display: none;
+    }
 }
 .scroll {
     position: fixed;
@@ -1333,4 +1336,8 @@ button:hover {
     position: fixed;
     top: 50%;
     right: 5px;
+}
+.logo-img {
+    height: 40px; /* Ajuste a altura conforme necessário */
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
 }
