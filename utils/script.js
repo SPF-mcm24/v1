@@ -1,6 +1,6 @@
 //script.js
 const pontos = [
-    { nome: "Condomel – Big Bee Brasil", endereco: "R. Leonardo Meca, 56 – Centro", lat: -23.7095169, lng: -46.412993 },
+    { nome: "Condomel – Paço Municipal", endereco: "R. Leonardo Meca, 56 – Centro", lat: -23.7095169, lng: -46.412993 },
     { nome: "Condomel – Câmara Municipal", endereco: "Rua Virgílio Gola, 40 – Pastoril", lat: -23.7112766, lng: -46.4112281 },
     { nome: "Condomel – Espaço Lavoisier", endereco: "Av. Pref. Valdírio Prisco, 200 – Centro", lat: -23.7081625, lng: -46.4173833  },
     { nome: "Condomel – Abelhas da Justiça", endereco: "Av. Pref. Valdírio Prisco, 150 – Centro", lat: -23.7083724, lng: -46.4175207 },
@@ -10,7 +10,6 @@ const pontos = [
     { nome: "Condomel – LeBem", endereco: "Av. Benjamim Baptista Cerezoli, 580 – Pilar Velho", lat: -23.6821879, lng: -46.4074776 },
     { nome: "Condomel – Abelhas da Educação", endereco: "R. Emerson Conde Soares Giacomini, 200 – Ouro Fino", lat: -23.6818131, lng: -46.355889 },
     { nome: "Condomel – CRI", endereco: "R. Alferes Botacin, 171 – Centro Alto", lat: -23.7157106, lng: -46.4132153 },
-    { nome: "Condomel – Vila do Doce", endereco: "R. Boa Vista, s/n – Centro", lat: -23.711525, lng: -46.4130372 },
     { nome: "Condomel – Escola Municipal Edir Maria de Oliveira", endereco: "Av. Ver. Rubens Maziero, 526 – Sítio Santana", lat: -23.6747838, lng: -46.3452608 },
     { nome: "Condomel – Toth", endereco: "R. Osvaldo Cruz, 02 – Centro", lat: -23.71965, lng: -46.4105132 },
     { nome: "Condomel – Estancia Delfis", endereco: "R. Eugênio Galo, 145 – Centro", lat: -23.7067633, lng: -46.4084658 },
