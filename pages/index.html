@@ -21,7 +21,7 @@
     <nav class="navbar" id="navbar">
         <div class="navbar-container">
             <a href="index.html" class="navbar-logo">
-                <img src="../img/logo.jpg" alt="Logo Projeto Condomel" class="logo-img para-pc"> 
+                <img src="../img/logo.png" alt="Logo Projeto Condomel" class="logo-img para-pc"> 
                 Abelhas da Mata
             </a>
             
@@ -40,7 +40,7 @@
                 </div>
                 
                 <li><a href="sobre.html">Sobre o Projeto</a></li>
-                <li><a href="condomeis.html">Condomeis</a></li>
+                <li><a href="condomeis.html">Meliponários</a></li>
                 <li><a href="comunidade.html">Comunidade</a></li>
                 
                 <div id="accessibility-bar">
@@ -115,6 +115,7 @@
                 </div>
             </div>
             
+            
             <section class="card fade-in">
                 <h3><i class="fas fa-map-marked-alt icon"></i>Circuito das Abelhas: Uma Rede de Vida</h3>
                 <p>Explore o mapa interativo abaixo para descobrir a localização dos 15 condomínios de abelhas espalhados por Ribeirão Pires. Cada ponto representa um oásis de biodiversidade, contribuindo para a saúde ecológica de nossa cidade.</p>
@@ -158,9 +159,38 @@
 
                 <p>O PEPTA está alinhado com a Agenda 2030 da ONU, promovendo educação de qualidade e desenvolvimento sustentável.</p>
 
+                <div class="ods-carousel">
+                    <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+                    <div class="carousel-images">
+                        <img src="../img/ods1.png" alt="ODS 1: Erradicação da Pobreza">
+                        <img src="../img/ods2.png" alt="ODS 2: Fome Zero e Agricultura Sustentável">
+                        <img src="../img/ods3.png" alt="ODS 3: Saúde e Bem-Estar">
+                        <img src="../img/ods4.png" alt="ODS 4: Água Limpa e Saneamento">
+                        <img src="../img/ods5.png" alt="ODS 5: Igualdade de Gênero">
+                        <img src="../img/ods6.png" alt="ODS 6: Meio Ambiente Sustentável">
+                        <img src="../img/ods7.png" alt="ODS 7: Energia Limpa e Acessível">
+                        <img src="../img/ods8.png" alt="ODS 8: Trabalho Decente e Crescimento Econômico">
+                        <img src="../img/ods9.png" alt="ODS 9: Indústria, Inovação e Infraestrutura">
+                        <img src="../img/ods10.png" alt="ODS 10: Redução das Desigualdades">
+                        <img src="../img/ods11.png" alt="ODS 11: Cidades e Comunidades Sustentáveis">
+                        <img src="../img/ods12.png" alt="ODS 12: Produção e Consumo Responsáveis">
+                        <img src="../img/ods13.png" alt="ODS 13: Ação Urgente pela Mudança Climática">
+                        <img src="../img/ods14.png" alt="ODS 14: Vida Submarina">
+                        <img src="../img/ods15.png" alt="ODS 15: Vida na Terra">
+                        <img src="../img/ods16.png" alt="ODS 16: Paz, Justiça e Construções Institucionais">
+                        <img src="../img/ods17.png" alt="ODS 17: Parcerias para o Desenvolvimento Sustentável">
+                    </div>
+                    <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+                </div>
+                
+
                 <a href="https://turismoribeiraopires.com.br/pepta/" class="pepta-button">
                     <i class="fas fa-calendar-alt icon"></i>Agende sua Visita ao PEPTA
                 </a>
+                <a href="https://brasil.un.org/pt-br/sdgs" target="_blank" class="pepta-button" id="pao">
+                    <i class="fas fa-globe icon"></i> Saiba mais sobre os ODS
+                </a>
+                
             </section>
 
             <section class="card fade-in" style="margin-top: 4rem;">
@@ -237,6 +267,39 @@
             </div>
         </div>
     </div>
+    
+    <script>
+let currentSlide = 0;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.carousel-images img');
+    const offset = -index * 120; // Calcula o próximo offset
+    
+    // Se o próximo offset for menor que -600px, volta ao início
+    if (offset < -600) {
+        currentSlide = 0;
+    } 
+    // Se o offset for maior que 150px, vai para -600px
+    else if (offset > 620) {
+        currentSlide = 5; // 600/120 = 5 slides
+    }
+    else {
+        currentSlide = index;
+    }
+    
+    const finalOffset = -currentSlide * 120;
+    document.querySelector('.carousel-images').style.transform = `translateX(${finalOffset}px)`;
+}
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+    </script>
+    
     
 
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>

@@ -1344,3 +1344,80 @@ button:hover {
     height: 40px; /* Ajuste a altura conforme necessário */
     margin-right: 10px; /* Espaçamento entre o ícone e o texto */
 }
+.ods-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 2rem 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    max-width: 100px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    transform: none !important; /* Força nenhuma transformação */
+    transition: none !important; /* Remove qualquer transição */
+
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+    background-color: var(--primary-color);
+}
+
+.carousel-button.prev {
+    left: 0;
+}
+
+.carousel-button.next {
+    right: 0;
+}
+
+.pepta-button-ods {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 2rem;
+}
+
+.pepta-button-ods:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 768px) {
+    .ods-carousel{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .pepta-button#pao{
+        margin-left: 130px;
+    }
+}
