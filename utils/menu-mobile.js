@@ -1,3 +1,5 @@
+//menu_mobile.js
+
 const mobileMenu = document.getElementById('mobile-menu');
 const navbarMenu = document.querySelector('.navbar-menu');
 

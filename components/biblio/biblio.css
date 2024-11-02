@@ -39,9 +39,12 @@
 }
 
 .library-item .thumb img {
+    width:400px;
+    height:580px;
     max-width: 100%;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
 }
 
 .library-item .description {
@@ -104,9 +107,16 @@
 
     .library-item .description h2 {
         font-size: 1.5rem;
+        text-align: center;
     }
 
     .library-item .description p {
         font-size: 1rem;
     }
+
+    .library-item .thumb img {
+        width:250px;
+        height:350px;
+    }
+
 }

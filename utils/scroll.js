@@ -1,3 +1,4 @@
+//scroll.js
 const scrollToTopButton = document.getElementById('scrollToTop');
 
 window.addEventListener('scroll', () => {

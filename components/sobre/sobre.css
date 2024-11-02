@@ -303,6 +303,9 @@ flex-direction: column;
 i{
     color: #666;
 }
+nav i{
+    color: #333;
+}
 .botoes i{
     color: black;
 }

@@ -304,13 +304,42 @@
 
 
 
+<!-- Modal -->
 <div id="modal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
         <img id="modal-image" src="" alt="Abelha em destaque">
         <div id="modal-info"></div>
+        <div class="modal-actions">
+            <button class="like-button"><i class="fas fa-thumbs-up"></i> Curtir</button>
+        </div>
+        <div class="comentarios">
+            <h3>Comentários</h3>
+            <div class="comments-section">
+                <textarea id="comment-input" placeholder="Adicione um comentário..."></textarea>
+                <button id="add-comment-button" disabled>Comentar</button>
+            </div>
+
+            <div class="comment">
+                <p><strong>Usuário:</strong> Comentário de exemplo.</p>
+                <div class="comment-actions">
+                    <button class="like-comment-button">
+                        <span class="like-count">0</span>
+                        <i class="fas fa-thumbs-up"></i>
+                    </button>
+                    <button class="dislike-comment-button">
+                        <span class="dislike-count">0</span>
+                        <i class="fas fa-thumbs-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+
+
+
 
 <div class="scroll fixed-position" id="scroll">
     <!-- SEPARAR DPS PARA NAO FICAR BUGADO COM O FILTRO -->
