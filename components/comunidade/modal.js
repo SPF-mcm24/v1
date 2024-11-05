@@ -19,18 +19,18 @@ function openModal(card) {
     `;
 
     modal.style.display = "block";
-    document.body.style.overflow = 'hidden'; // Previne rolagem do fundo
+    document.body.style.overflow = 'hidden'; 
 }
 
 closeBtn.onclick = function() {
     modal.style.display = "none";
-    document.body.style.overflow = ''; // Restaura a rolagem
+    document.body.style.overflow = '';
 }
 
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-        document.body.style.overflow = ''; // Restaura a rolagem
+        document.body.style.overflow = ''; 
     }
 }
 
@@ -38,7 +38,7 @@ function toggleFilter() {
     document.getElementById("filterDropdown").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
+
 window.onclick = function(event) {
     if (!event.target.matches('.filter-icon') && !event.target.matches('.fa-filter')) {
         var dropdowns = document.getElementsByClassName("filter-dropdown");
@@ -51,7 +51,7 @@ window.onclick = function(event) {
     }
 }
 
-// Lógica para likes e dislikes
+
 document.addEventListener('click', function(event) {
     if (event.target.closest('.like-button, .dislike-button, .like-comment-button, .dislike-comment-button')) {
         const button = event.target.closest('.like-button, .dislike-button, .like-comment-button, .dislike-comment-button');
@@ -59,7 +59,7 @@ document.addEventListener('click', function(event) {
         button.classList.add('animate');
         setTimeout(() => {
             button.classList.remove('animate');
-        }, 500); // Duração da animação
+        }, 500);
 
         if (button.matches('.like-comment-button')) {
             const likeCount = button.querySelector('.like-count');

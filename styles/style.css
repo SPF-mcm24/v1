@@ -792,7 +792,7 @@ button:hover {
     }
 }
 
-/* Estilos gerais para as novas páginas */
+
 .hero {
     background-color: var(--card-bg);
     border-radius: 30px;
@@ -833,7 +833,7 @@ button:hover {
     margin-bottom: 4rem;
 }
 
-/* Estilos específicos para a página Condomeis */
+
 .condomeis-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -874,7 +874,7 @@ button:hover {
     
 }
 
-/* Estilos específicos para a página Comunidade */
+
 #photo-upload-form {
     display: flex;
     flex-direction: column;
@@ -1227,7 +1227,7 @@ button:hover {
     }
 
 
-    /* Ajustes na barra de acessibilidade */
+
     #accessibility-bar {
         width: 100%;
         display: flex;
@@ -1236,7 +1236,7 @@ button:hover {
         gap: 1rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         position: relative;
-        /* Removido position fixed/absolute para seguir o fluxo natural */
+      
         margin-top: 1rem;
     }
 
@@ -1309,7 +1309,7 @@ button:hover {
     .navbar-toggle.active .bar:nth-child(3) {
         transform: translateY(-9px) rotate(-45deg);
     }
-    /* Updated profile icon styles */
+
     .profile-container {
         width: 100%;
         display: flex;
@@ -1318,7 +1318,7 @@ button:hover {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
     .profile-icon {
-        font-size: 4rem; /* Increased size */
+        font-size: 4rem; 
         color: white;
         width: 100px;
         height: 100px;
@@ -1332,7 +1332,7 @@ button:hover {
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-    /* Ensure it stays above other content */
+
 }
 .libras{
     z-index: 1000;
@@ -1341,8 +1341,8 @@ button:hover {
     right: 5px;
 }
 .logo-img {
-    height: 40px; /* Ajuste a altura conforme necessário */
-    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    height: 40px; 
+    margin-right: 10px; 
 }
 .ods-carousel {
     display: flex;
@@ -1375,7 +1375,7 @@ button:hover {
     cursor: pointer;
     position: absolute;
     transform: none !important; /* Força nenhuma transformação */
-    transition: none !important; /* Remove qualquer transição */
+    transition: none !important; 
 
     z-index: 1;
     transition: background-color 0.3s ease;
@@ -1459,6 +1459,9 @@ button:hover {
     font-size: 1.3rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-top: 2rem;
+}
+.pepta-button#moure {
+    margin-right: 25px;
 }
 
 .ods-button:hover {

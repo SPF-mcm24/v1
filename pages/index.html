@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="../styles/style.css">
 
+
 </head>
 <body>
 
@@ -93,8 +94,11 @@
                 <p>Reconhecendo a importância crucial dos polinizadores para o meio ambiente, Ribeirão Pires assume um papel de destaque na conservação ambiental com o projeto "Abelhas da Mata". Essa iniciativa, implementada pela Prefeitura, visa fortalecer o ecossistema local através da instalação de abrigos para abelhas nativas sem ferrão em áreas estratégicas da cidade. A proteção desses insetos, além de promover a polinização e garantir a continuidade da flora local, contribui para a saúde do meio ambiente como um todo.</p>
                 <p class="quote">"Se as abelhas desaparecerem da face da Terra, a humanidade terá apenas mais quatro anos de existência." - Albert Einstein</p>
                 <div class="botao">
-                    <a href="https://moure.cria.org.br/" target="_blank" class="pepta-button">
+                    <a href="https://moure.cria.org.br/" target="_blank" class="pepta-button" id="moure">
                     <i class="fas fa-book-open icon"></i> Catálogo Moure
+                </a>
+                <a href="https://abelha.org.br/" target="_blank" class="ods-button">
+Site da A.B.E.L.H.A.
                 </a>
             </div>
             </section>
@@ -105,6 +109,8 @@
                 <a href="https://brasil.un.org/pt-br/sdgs" target="_blank" class="ods-button">
                     <i class="fas fa-globe icon"></i> Saiba mais sobre os ODSs
                 </a>
+
+                
             </section>
             
             
@@ -288,15 +294,13 @@ let currentSlide = 0;
 
 function showSlide(index) {
     const slides = document.querySelectorAll('.carousel-images img');
-    const offset = -index * 120; // Calcula o próximo offset
+    const offset = -index * 120;
     
-    // Se o próximo offset for menor que -600px, volta ao início
     if (offset < -600) {
         currentSlide = 0;
     } 
-    // Se o offset for maior que 150px, vai para -600px
     else if (offset > 620) {
-        currentSlide = 5; // 600/120 = 5 slides
+        currentSlide = 5;
     }
     else {
         currentSlide = index;

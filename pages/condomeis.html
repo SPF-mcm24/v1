@@ -281,18 +281,14 @@
         libras_scroll.style.position = 'fixed';
         libras.style.position = 'fixed';
 
-        // Seleciona todos os elementos que precisam da borda
         const elements = document.querySelectorAll('.hero, .card, .pepta-section, main, footer, .scroll-to-top, nav, .bar, .condomeis-intro, .condomel-card');
-
         elements.forEach(element => {
             if (element.style.border && element.style.borderRadius) {
-                // Remove a borda e o border-radius se já estiverem aplicados
                 element.style.border = '';
                 element.style.borderRadius = '';
             } else {
-                // Adiciona o estilo de borda e border-radius
                 element.style.border = '1px solid var(--borda-color)';
-                element.style.borderRadius = '10px'; // Ajuste o valor para o desejado
+                element.style.borderRadius = '10px'; 
             }
         });
     });

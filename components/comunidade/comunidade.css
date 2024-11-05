@@ -505,7 +505,7 @@
 
 .comment p {
     margin: 0;
-    padding-right: 100px; /* Espaço para os botões de ação */
+    padding-right: 100px;
 }
 
 .comment-actions {
@@ -549,7 +549,7 @@
     
     .comment p {
         padding-right: 0;
-        margin-bottom: 3rem; /* Espaço para os botões de ação em mobile */
+        margin-bottom: 3rem;
     }
     
     .comment-actions {

@@ -46,6 +46,14 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 
 }
+.especifico .library-item .thumb img {
+    width: 610px;
+    height: 400px;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 
 .library-item .description {
     flex: 2;

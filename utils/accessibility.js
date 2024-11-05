@@ -41,13 +41,11 @@ highContrastButton.addEventListener('click', () => {
 
     elements.forEach(element => {
         if (element.style.border && element.style.borderRadius) {
-            // Remove a borda e o border-radius se já estiverem aplicados
             element.style.border = '';
             element.style.borderRadius = '';
         } else {
-            // Adiciona o estilo de borda e border-radius
             element.style.border = '1px solid var(--borda-color)';
-            element.style.borderRadius = '10px'; // Ajuste o valor para o desejado
+            element.style.borderRadius = '10px'; 
         }
     });
 });
